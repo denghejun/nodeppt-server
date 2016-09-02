@@ -4,11 +4,11 @@ var Service = require('node-windows').Service;
 var svc = new Service({
   name:'Nodeppt Web Server V1.0.4',
   description: '',
-  script: 'D:\\leo.h.deng\\work\\core\\08 Doc\\02 nodeppts\\web-server\\nodeppt-server.js'
+  script: 'D:\\leo.h.deng\\work\\core\\10 Code\\05 git-repository\\nodeppt-server\\web-server\\nodeppt-server.js'
 });
 
 svc.user.domain = 'ABS_CORP';
-svc.user.account = 'yycheng';
+svc.user.account = 'yycheng'
 svc.user.password = 'CDE#cde3';
 
 // Listen for the "install" event, which indicates the
