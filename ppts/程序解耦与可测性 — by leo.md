@@ -4,6 +4,13 @@ theme:colors
 highlightStyle:monokai_sublime
 date:2015年12月20日
 transition:horizontal3d
+circle
+earthquake
+vkontext
+cards
+stick
+pulse
+
 
 [slide]
 ## 你即将从本文了解到
@@ -70,14 +77,14 @@ transition:horizontal3d
 
 * Autofac不要仅仅用来做与单元测试的东西,那不是它真正的本领。看本文所要聊的其实就是用Autofac+Moq来做一个组件间低耦合、可测试的应用程序。前者用来解决低耦合，后者用来解决单元测试编写与执行。
 
-[slide]
+[slide data-transition="stick"]
 ## Autofac与Moq实现单元测试是一种怎样的体验
 ----
 理论是实践的重中之重
 * 如果你是直接跳到这一小节的，我觉得你可能太着急了，因为理论是实践的重中之重，或许你应该看看前面的内容 {:&.moveIn}
 * 我们需要的Package有：[Autofac, Autofac.Configuration, Autofac.Extras.Moq, Moq]
 
-[slide]
+[slide data-transition="stick"]
 ## 我们要实现什么功能
 ----
 一个奇怪的计算逻辑
@@ -94,21 +101,21 @@ transition:horizontal3d
 
 [slide]
 ## Biz
-业务逻辑，被测单元
+业务逻辑等价于被测单元
 * ![](/assets/image/console-core.png) ![](/assets/image/main.png) {:&.bounceIn}
 * Core.CalculateComplex利用依赖的外部服务实现了一个复杂的操作
-* 用计算服务完成了2个整形之和与只差的乘积
-* 用通知服务将计算结果以特定的format对外发布了消息
+* 用"计算服务"完成了2个整形之和与只差的乘积
+* 用"通知服务"将计算结果以特定的format对外发布了消息
 * 在client端创建一个基于配置文件的IOC容器，并在有限的Scope（资源管理）中，从容器中取得我想要的Core服务进行该操作的调用
 
-[slide]
+[slide data-transition="earthquake"]
 ## 我们如何测试这个系统
 为了避免本文是TDD相关的嫌疑，我将单元测试放在了最后
 * 你完全可以在系统设计完成后就立即着手单元测试 {:&.bounceIn}
 * 结合Autofac + Moq，测试该业务功能的代码看起来是下面这样的（注释）
 * ![](/assets/image/test-code.png)
 
-[slide]
+[slide data-transition="earthquake"]
 ## 保持你的单元测试自动化与可读
 ----
 **<font color='yellow'>这是下一次的分享</font>**
