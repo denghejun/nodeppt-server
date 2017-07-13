@@ -1,3 +1,2 @@
 # ppt
-ppts/*
-.DS_Store
+ppts/*.md
