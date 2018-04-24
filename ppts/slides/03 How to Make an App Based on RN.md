@@ -70,14 +70,15 @@ date: 2017年4月5日
 
 [slide data-transition="horizontal3d"]
 ## A New Pattern
-它是基于React而诞生的一种新的设计模式
+基于React而诞生的一种新的设计模式
 <br/>也算是对Flux架构风格的一种实现
+<br/>因为它同时也阐述了单向数据流
 <hr style="border-color:Silver"/>
 * <font style="color:yellow">Container用来管理应用的业务逻辑</font> {:&.bounceIn}
 * <font style="color:yellow">视图(View)部分只用来无业务逻辑的渲染</font>
 
 [slide data-transition="horizontal3d"]
-## CommentList Demo
+## Comment List
 * 试用一个简单的idea来阐述这个事实：有一个React Component叫CommentList，一旦它Load完成，它就渲染出所有 comment 的 user 和 content {:&.bounceIn}
 * ```
 class CommentList extends React.Component {
@@ -113,7 +114,7 @@ class CommentList extends React.Component {
 
 * 首先，这并没有什么错误 {:&.bounceIn}
 * 但忽略了 React 的一些特性：Reusability (可重用性)
-* 既然我们推崇职责单一原则，那么显然，以上风格的确是存在设计上 的缺陷
+* 既然我们推崇职责单一原则，那么显然，以上风格的确是存在设计上的缺陷, 但并不是错误
 * 我们就要尝试将正确的事物放到正确的位置，让它们以更好的方式进行链接、协同工作。
 
 
@@ -236,6 +237,19 @@ code-push promote FilmNight Staging Production
   <source tyle="{border: 10px solid red}"  src="/images/update-ios.mp4" type="video/mp4">
 您的浏览器不支持 video 标签。
 </video>
+
+[slide data-transition="horizontal3d"]
+## react-native-modular-bootstrapper
+
+<img src="https://raw.githubusercontent.com/denghejun/react-native-modular-bootstrapper/master/src/image/logo3.png" height="200" width="50%" />
+
+[<font style="color:rgb(83, 230, 31)">react-native-modular-bootstrapper</font>](https://github.com/denghejun/react-native-modular-bootstrapper) {:&.bounceIn}
+
+[React Native Modular Bootstrapper](https://github.com/denghejun/react-native-modular-bootstrapper.git) &middot;[![npm version](https://badge.fury.io/js/react-native-modular-bootstrapper.svg)](https://badge.fury.io/js/react-native-modular-bootstrapper) &middot;
+
+[![NPM](https://nodei.co/npm/react-native-modular-bootstrapper.png?downloads=true&downloadRank=true)](https://nodei.co/npm/react-native-modular-bootstrapper/)
+
+* One useful modular development framework depends on Ioc, Expo and TypeScript for react native. {:&.bounceIn}
 
 [slide data-transition="horizontal3d"]
 ## Thanks
