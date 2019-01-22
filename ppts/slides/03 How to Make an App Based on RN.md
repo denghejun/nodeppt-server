@@ -1,7 +1,7 @@
 title: 03 How Do I Make an App Based on RN
 speaker: Deng,hejun
 transition: cards
-theme: colors
+files: /css/theme.css
 highlightStyle: monokai_sublime
 date: 2017年4月5日
 
@@ -13,7 +13,7 @@ date: 2017年4月5日
 * Flux and Redux
 * Container Components Pattern
 * Dynamic Update
-* [Film Night] App
+* [Five Films] App
 
 [slide data-transition="horizontal3d"]
 ## About React & React Native
@@ -226,20 +226,35 @@ code-push promote FilmNight Staging Production
 <img src="/images/pi.png" height="300" width="100%" />
 
 [slide data-transition="horizontal3d"]
-## FilmNight Video
+## Five Films
 
 <video width="80%" controls style="background-color:black">
   <source tyle="{border: 10px solid red}"  src="/images/app.mp4" type="video/mp4">
 您的浏览器不支持 video 标签。
 </video>
-
+<hr style="border-color: white"/>
  <video width="80%" controls style="background-color:black">
   <source tyle="{border: 10px solid red}"  src="/images/update-ios.mp4" type="video/mp4">
 您的浏览器不支持 video 标签。
 </video>
 
 [slide data-transition="horizontal3d"]
+## Components & Tech
+<img src="/images/ts.png" height="150" width="50%" />
+<hr style="border-color: white"/>
+<br/>
+
+* [<font style="color:rgb(83, 230, 31)">Five-Films</font>](https://github.com/denghejun/react-native-modular-bootstrapper) {:&.bounceIn}
+* [<font style="color:rgb(231, 251, 1)">Five-Films-Interface</font>](https://github.com/denghejun/react-native-modular-bootstrapper)
+* [<font style="color:rgb(238, 83, 149)">Five-Films-Service</font>](https://github.com/denghejun/react-native-modular-bootstrapper)
+* [<font style="color:rgb(7, 244, 236)">React-Native-Modular-Bootstrapper</font>](https://github.com/denghejun/react-native-modular-bootstrapper)
+
+
+[slide data-transition="horizontal3d"]
 ## react-native-modular-bootstrapper
+One useful modular development framework depends on Ioc, Expo and TypeScript for react native. {:&.moveIn}
+<hr style="border-color: white"/>
+<br/>
 
 <img src="https://raw.githubusercontent.com/denghejun/react-native-modular-bootstrapper/master/src/image/logo3.png" height="200" width="50%" />
 
@@ -249,7 +264,7 @@ code-push promote FilmNight Staging Production
 
 [![NPM](https://nodei.co/npm/react-native-modular-bootstrapper.png?downloads=true&downloadRank=true)](https://nodei.co/npm/react-native-modular-bootstrapper/)
 
-* One useful modular development framework depends on Ioc, Expo and TypeScript for react native. {:&.bounceIn}
+
 
 [slide data-transition="horizontal3d"]
 ## Thanks
