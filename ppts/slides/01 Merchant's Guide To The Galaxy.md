@@ -1,7 +1,7 @@
 title: 01 Merchant's Guide To The Galaxy
 speaker: Deng,hejun
 transition: cards
-theme: colors
+files: /css/theme.css
 highlightStyle: monokai_sublime
 date: 2015年12月20日
 
