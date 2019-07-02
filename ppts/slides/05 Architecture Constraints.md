@@ -11,9 +11,7 @@ date: 2015年12月20日
 <hr style="border-color:yellow"/>
 * Abstract Oriented (面向抽象) {:&.moveIn}
 * Architecture Constraints (架构制约)
-* Merchant's Guide To The Galaxy Demo
-
-
+* Best Practice (最佳实践)
 
 
 [slide data-transition="horizontal3d"]
@@ -87,46 +85,19 @@ Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
 给后续开发者良好的编程体验，譬如将来有一种新的输入命令需要处理，开发者只需要添加新的输入
 指令/命令具象即可像预期的那样工作。 
 
-[slide data-transition="earthquake"]
-## Merchant's Guide To The Galaxy
-<hr style="border-color:yellow"/>
------
-<pre>
-<code>
-A sample input file would be like this:
-
-glob is I
-prok is V
-pish is X
-tegj is L
-glob glob Silver is 34 Credits
-glob prok Gold is 57800 Credits
-pish pish Iron is 3910 Credits
-how much is pish tegj glob glob ?
-how many Credits is glob prok Silver ?
-how many Credits is glob prok Gold ?
-how many Credits is glob prok Iron ?
-how much wood could a woodchuck chuck if a woodchuck could chuck= wood ?
-
-Corresponding output to this would be as given below :
-
-pish tegj glob glob is 42
-glob prok Silver is 68 Credits
-glob prok Gold is 57800 Credits
-glob prok Iron is 782 Credits
-I have no idea what you are talking about
-</code>
-</pre>
 
 [slide data-transition="horizontal3d"]
-## 这是什么，你会怎么做
+## Best Practice (最佳实践)
+-----
+<hr style="border-color:yellow"/>
+刚刚的代码部分是什么，你会怎么做？
+
+[slide data-transition="horizontal3d"]
+## 刚刚的代码部分是什么，你会怎么做
 -----
 * 编码前的思考，有利于提高`编码自信` {:&.bounceIn}
     * 字符串处理是一个常规的编程问题，它应该是一种纯粹的对`数据收集`的部分，不应该混合在计算、转换这样的操作中 {:&.bounceIn}
-    * 罗马数字应是一个专业的`领域`系统，需要提供计算和转换的标准接口，应该将它设计成一种公共资源，甚至与本需求无关；
-    * 支持从文件输入和控制台输入，实际上为了接口的统一，理论上应该把从控制台输入的数据也缓存到临时文件，这样系统的入口单一，接口的`调用方`会觉得更加舒适
-
-
+    * 罗马数字应是一个专业的`领域`系统，需要提供计算和转换的标准接口，应该将它设计成一种公共资源，甚至与本需求无关。例如 Math.PI，RomanNumbers.IV。
 
 [slide data-transition="horizontal"]
 ##  分离抽象
@@ -136,7 +107,7 @@ I have no idea what you are talking about
     * `glob glob Silver is 34 Credits`: 这是一种对商品单价的隐式描述；
     * `how much is pish tegj glob glob ?`:这是一种纯粹的用别名的方式询问罗马数字组合后与十进制值的转换描述；
     * `how many Credits is glob prok Silver ?`:这是一种询问商品数量与总价的计算描述；
-    * `how much wood could a woodchuck chuck if a woodchuck could chuck= wood ?`:这是一种异常输入，属于程序处理范围之外的输入；
+    * `how much a could be A if foo = wow ?`:这是一种异常输入，属于程序处理范围之外的输入；
 
 [slide data-transition="horizontal3d"]
 ## 面向抽象
@@ -206,19 +177,16 @@ public abstract class Command&lt;TDirective&gt; : Command where TDirective : Com
 </pre>
 
 [slide data-transition="horizontal3d"]
-## 深度设计使其满足低耦合、可扩展、优雅
 -----
 <pre><code>
-*** 控制台 ***
-GuideConsole(.exe)
+*** UI ***
 |_GuideMenus
 |_GuideMenus/ExitMenu.cs
 |_GuideMenus/InputDataFromConsoleMenu.cs
 |_GuideMenus/InputDataFromFileMenu.cs
 
-*** 银河系指南系统 ***
-GuideToTheGalaxy(.dll)
-|_GalaxyGuider.cs
+*** Core System ***
+|_Guider.cs
 |_Commands ## 指令系统
 |_Commands/AliasCommand.cs
 |_Commands/UnitPriceCommand.cs
@@ -242,14 +210,12 @@ GuideToTheGalaxy(.dll)
 [slide data-transition="horizontal3d"]
 <pre>
 <code>
-*** 罗马数字资源系统 ***
-RomanNumerals(.dll)
+*** Roman Number System ***
 |_RomanCalculator.cs
 |_RomanNumber.cs
 |_SymbolEnum.cs
 
-*** 基于 NUnit 单元测试 ***
-GuideToTheGalaxy.Tests(.exe)
+*** Unit Tests ***
 |_...
 
 </code>
@@ -368,7 +334,7 @@ private static GuideResponse Solve(string content)
 [slide data-transition="horizontal3d"]
 ## 新Feature将不会是问题
 -----
-* 用户会输入：xxx is I：意思是给罗马数字换一种别名 {:&.bounceIn}
+* 用户新增输入类型：xxx is I：意思是给罗马数字换一种别名 {:&.bounceIn}
 * 用户会输入：How many Silvers is glob glob Gold？：意思是glob glob个金子是多少银？
 
 [slide data-transition="horizontal3d"]
@@ -377,11 +343,8 @@ private static GuideResponse Solve(string content)
 * 只需要将策略托管到容器 {:&.bounceIn}
 
 
-## 当某一天现有架构制约不足以支撑新的需求，怎么办？
 
-* 如果架构制约设计得较好，这是一个低概率事件 {:&.bounceIn}
-* 演进你的架构制约
-* 创造逻辑上新的架构制约
+
 
 
 [slide data-transition="horizontal3d"]
