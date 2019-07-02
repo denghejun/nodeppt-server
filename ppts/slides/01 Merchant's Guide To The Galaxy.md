@@ -36,7 +36,7 @@ date: 2015年12月20日
 -----
 
 * 你所知道的好的OOP技术或手段？ {:&.bounceIn}
-    * `多态`(语言本身提供) {:&.moveIn}
+    * `Encapsulation`,`Inheritance`,`Polymorphism`(语言本身提供) {:&.moveIn}
     * `Design Pattern`
     * `IOC(DI)`（IOC的真实含义？）
     * `DDD`
@@ -44,9 +44,8 @@ date: 2015年12月20日
 		* Small is beautiful. {:&.moveIn}
 		* Make each program do one thing well.
 		* Build a prototype as soon as possible.
-		* Choose portability over efficiency.
+		* Tech stack diversity
 	* `AOP`(对oop的补充)
-    * Whatever {:.yellow}
 
 [slide data-transition="earthquake"]
 ## Merchant's Guide To The Galaxy
