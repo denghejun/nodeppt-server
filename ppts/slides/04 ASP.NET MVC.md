@@ -2,6 +2,7 @@ title: 04 ASP.NET MVC
 speaker: Deng,hejun
 transition: cards
 theme: colors
+files: /css/theme.css
 highlightStyle: monokai_sublime
 date: 2018年11月1日
 
