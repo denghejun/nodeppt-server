@@ -60,7 +60,7 @@ date: 2019年7月12日
 * 制定 1 个统一的"后端"异常处理框架 {:&.moveIn}
 * 制定 1 个统一的"后端"常规业务逻辑处理的编程模型
 * 制定 1 个统一的"前后端"交互编程模型
-* 制定 1 个"前端"代码模块化的通用框架
+* 制定 1 个"前端"代码OOP模块化的通用框架
 
 
 
@@ -111,6 +111,7 @@ date: 2019年7月12日
 [slide data-transition="horizontal3d"]
 ## Sprint 0 （1 week）
 -----
+<span class="desc">~迭代开端的准备工作~</span>
 [slide data-transition="horizontal3d"]
 -----
 * 确定代码治理人力资源和业务开发人力资源分配 {:&.bounceIn}
