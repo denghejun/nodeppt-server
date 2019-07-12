@@ -35,6 +35,7 @@ date: 2019年7月12日
 [slide data-transition="horizontal3d"]
 ## Topic A - 1
 -----
+<span class="desc">~one word for Topic A - 1~</span>
 [slide data-transition="horizontal3d"]
 -----
 * Topic A - 1 - 1 {:&.moveIn}
@@ -46,6 +47,7 @@ date: 2019年7月12日
 [slide data-transition="horizontal3d"]
 ## Topic A - 2
 -----
+<span class="desc">~one word for Topic A - 2~</span>
 [slide data-transition="horizontal3d"]
 -----
 * Topic A - 2 - 1 {:&.moveIn}
@@ -57,6 +59,7 @@ date: 2019年7月12日
 [slide data-transition="horizontal3d"]
 ## Topic A - 3
 -----
+<span class="desc">~one word for Topic A - 3~</span>
 [slide data-transition="horizontal3d"]
 -----
 * Topic A - 3 - 1 {:&.moveIn}
