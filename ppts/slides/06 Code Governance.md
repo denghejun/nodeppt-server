@@ -44,7 +44,7 @@ date: 2019年7月12日
 [slide data-transition="horizontal3d"]
 -----
 * 所有代码格式化统一 {:&.bounceIn}
-* 消除 10 个核心 Package 所有魔法数字
+* 消除 10 个核心 Package 所有魔法数字（即未经定义的常量）
 * 消除 10 个核心 Package 所有重复代码  
 * 消除 10 个核心 Package 所有无意义硬编码
 * 在应用程序构建周期中引入 1 个代码格式检查的环节
