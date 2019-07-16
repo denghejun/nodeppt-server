@@ -5,7 +5,7 @@ files: /css/theme.css
 highlightStyle: monokai_sublime
 date: 2019年7月12日
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 ## 你即将从本文了解到
 -----
 <hr class="main-hr" />
@@ -29,7 +29,7 @@ date: 2019年7月12日
 
 
 
-[slide data-transition="kontext"]
+[slide data-transition="horizontal"]
 ## 关键结果
 -----
 <hr class="main-hr" />
@@ -90,7 +90,7 @@ date: 2019年7月12日
 
 
 
-[slide data-transition="kontext"]
+[slide data-transition="horizontal"]
 ## 迭代计划
 -----
 <hr class="main-hr" />
