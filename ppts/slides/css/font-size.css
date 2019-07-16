@@ -1,0 +1,12 @@
+/***********************************************       FONT SIZE      *************************************************/
+h2 {
+    font-size: 45px !important; /* Main title font size */
+}
+
+.desc {
+    font-size: 20px !important; /* Title description font size */
+}
+
+html, body, li, p {
+    font-size: 30px !important; /* List item or global normal paragraph font size */
+}

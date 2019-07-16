@@ -1,3 +1,6 @@
+@import "font-size.css";
+@import "img-size.css";
+
 /***********************************************      BACKGROUND COLOR      *******************************************/
 slide {
     background-color: black !important;
@@ -21,37 +24,3 @@ slide, h2 {
     font-weight: bold;
 }
 
-/***********************************************       FONT SIZE      *************************************************/
-h2 {
-    font-size: 45px !important; /* Main title font size */
-}
-
-.desc {
-    font-size: 20px !important; /* Title description font size */
-}
-
-html, body, li, p {
-    font-size: 30px !important; /* List item or global normal paragraph font size */
-}
-
-/***********************************************      IMAGE SIZE      *************************************************/
-img {
-    height: 250px;
-    width: 50%;
-    display: block;
-    margin: 10px auto;
-}
-
-.full-img {
-    height: 150px;
-    width: 100%;
-    display: block;
-    margin: 10px auto;
-}
-
-.full-screen-img {
-    height: 100% !important;
-    width: 100% !important;
-    display: block;
-    margin: 10px !important;
-}
