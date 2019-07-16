@@ -51,7 +51,7 @@ date: 2019年7月12日
 
 
 [slide data-transition="horizontal3d"]
-## 面对开发人员的更好的编程体验，增强编码自信
+## 面对开发人员更好编程体验增强编码自信
 -----
 <span class="desc">~合理的框架制约一定具备良好的编程体验和效率~</span>
 

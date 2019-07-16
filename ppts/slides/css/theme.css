@@ -1,7 +1,35 @@
+/***********************************************      Background Color      *******************************************/
 slide {
-  background-color: black !important;
+    background-color: black !important;
 }
 
+/***********************************************       Font Color      ************************************************/
+.main-hr {
+    border-color: yellow; /* Title underline color */
+}
+
+.desc {
+    color: lightgoldenrodyellow; /* Title description color */
+}
+
+.head-text {
+    color: deepskyblue; /* List item head text color. e.g. HeadTitle1: item content1. */
+}
+
+/***********************************************       Font Size      *************************************************/
+html, body, p, h2 {
+    font-size: 45px !important; /* Main title font size */
+}
+
+.desc {
+    font-size: 20px !important; /* Title description font size */
+}
+
+li {
+    font-size: 30px !important; /* List item font size */
+}
+
+/***********************************************      Image Size      *************************************************/
 img {
     height: 250px;
     width: 50%;
@@ -14,25 +42,4 @@ img {
     width: 100%;
     display: block;
     margin: 10px auto;
-}
-
-.main-hr {
-    border-color:yellow;
-}
-
-.desc {
-    color: lightgoldenrodyellow;
-    font-size: 20px !important;
-}
-
-.head-text {
-    color: deepskyblue;
-}
-
-html,body,p,h2 {
-    font-size: 50px !important;
-}
-
-li {
-    font-size: 30px !important;
 }
