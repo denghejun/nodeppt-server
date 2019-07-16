@@ -48,3 +48,10 @@ img {
     display: block;
     margin: 10px auto;
 }
+
+.full-screen-img {
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    margin: 10px !important;
+}

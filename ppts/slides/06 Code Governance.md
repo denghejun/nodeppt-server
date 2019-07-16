@@ -121,14 +121,15 @@ date: 2019年7月12日
 * 确定周期性审核"目标完成度"的方式和时间
 * 制定代码治理专项电子看板
 * 收集讨论并确定关键结果中的数字
-
 [slide data-transition="horizontal3d"]
 -----
 * <span class="head-text">Sprint 1</span> - 同一Codebase下，统一的编程风格（about 2 weeks） {:&.moveIn}
 * <span class="head-text">Sprint 2，3</span> - 面对开发人员的更好的编程体验，增强编码自信（about 4 weeks）
 * <span class="head-text">Sprint 4、5</span> - 稳健的软件架构演进（about 4 weeks）
 * <span class="head-text">Sprint 6、7</span> - 保证代码质量，降低产品发布的业务风险（about 4 weeks）
-
+[slide data-transition="horizontal3d"]
+-----
+<img class="full-screen-img" src="/images/codegov.png">
 
 
 [slide data-transition="horizontal3d"]
