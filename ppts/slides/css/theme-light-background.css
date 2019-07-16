@@ -1,0 +1,7 @@
+@import "global-font-size.css";
+@import "global-img-size.css";
+
+/***********************************************      BACKGROUND COLOR      *******************************************/
+slide {
+    background-color: white !important;
+}

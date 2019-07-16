@@ -1,26 +1,4 @@
-@import "font-size.css";
-@import "img-size.css";
-
-/***********************************************      BACKGROUND COLOR      *******************************************/
-slide {
-    background-color: black !important;
-}
-
-/***********************************************       FONT COLOR      ************************************************/
-slide, h2 {
-    color: white !important;
-}
-
-.main-hr {
-    border-color: yellow; /* Title underline color */
-}
-
-.desc {
-    color: lightgoldenrodyellow; /* Title description color */
-}
-
-.head-text {
-    color: deepskyblue; /* List item head text color. e.g. HeadTitle1: item content1. */
-    font-weight: bold;
-}
-
+@import "global-font-size.css";
+@import "global-img-size.css";
+@import "theme-dark-background.css";
+@import "theme-dark-font.css";

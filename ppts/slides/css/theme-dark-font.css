@@ -1,0 +1,18 @@
+/***********************************************       FONT COLOR      ************************************************/
+slide, h2 {
+    color: white !important;
+}
+
+.main-hr {
+    border-color: yellow; /* Title underline color */
+}
+
+.desc {
+    color: lightgoldenrodyellow; /* Title description color */
+}
+
+.head-text {
+    color: deepskyblue; /* List item head text color. e.g. HeadTitle1: item content1. */
+    font-weight: bold;
+}
+
