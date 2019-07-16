@@ -22,9 +22,17 @@ img {
 
 .desc {
     color: lightgoldenrodyellow;
+    font-size: 20px !important;
 }
 
 .head-text {
     color: deepskyblue;
 }
 
+html,body,p,h2 {
+    font-size: 50px !important;
+}
+
+li {
+    font-size: 30px !important;
+}
