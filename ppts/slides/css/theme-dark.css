@@ -1,10 +1,13 @@
 /***********************************************      BACKGROUND COLOR      *******************************************/
-slide, h2 {
+slide {
     background-color: black !important;
-    color: white !important;
 }
 
 /***********************************************       FONT COLOR      ************************************************/
+slide, h2 {
+    color: white !important;
+}
+
 .main-hr {
     border-color: yellow; /* Title underline color */
 }
