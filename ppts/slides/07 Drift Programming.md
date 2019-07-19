@@ -18,7 +18,7 @@ ThoughtWorks - Deng,Hejun
 
 
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 -----
 “昨天晚上我输给一辆AE86，他用惯性过弯，他的速度很快，我只看到他的车有一个豆腐店的招牌， 
 请问你知道他是谁吗? ”<span style="float:right;margin-top:50px"> ——《Initial D》</span>
@@ -29,7 +29,7 @@ ThoughtWorks - Deng,Hejun
 * 肖邦的演奏技巧精湛、音响华丽，被誉为“花丛中的大炮”
 * Drift Programming 不是捷径，是编程范畴的华丽技术
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 ## Service Circles (服务环绕)
 -----
 <hr class="main-hr" />
@@ -87,7 +87,7 @@ ThoughtWorks - Deng,Hejun
 * Layer更适合实现企业级的宽泛实现
 
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 ## Architecture Constraints (架构制约)
 -----
 <hr class="main-hr" />
@@ -125,7 +125,7 @@ Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
 * 同时架构的重要目的还是提供给后续开发者良好的编程体验
 
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 ## Abstract Oriented (面向抽象)
 -----
 <hr class="main-hr" />
@@ -142,7 +142,7 @@ Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
 
 
 
-[slide data-transition="horizontal3d"]
+[slide data-transition="horizontal"]
 ## Drift Programming
 -----
 <hr class="main-hr" />
