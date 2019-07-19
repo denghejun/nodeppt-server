@@ -9,7 +9,7 @@ date: 2019年7月12日
 <img class="full-img" src="/images/car1.jpg"/>
 ## 你即将从本文了解到
 -----
-
+ThoughtWorks - Deng,Hejun
 <hr class="main-hr" />
 * Topic A {:&.moveIn}
 * Topic B

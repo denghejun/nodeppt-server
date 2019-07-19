@@ -6,8 +6,9 @@ highlightStyle: monokai_sublime
 date: 2019年7月12日
 
 [slide data-transition="horizontal"]
-## 你即将从本文了解到
+## 代码治理
 -----
+ThoughtWorks - Deng,Hejun
 <hr class="main-hr" />
 * 代码治理的目标 {:&.moveIn}
 * 关键结果

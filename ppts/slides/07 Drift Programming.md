@@ -9,12 +9,13 @@ date: 2019年7月12日
 <img class="full-img" src="/images/car3.jpg"/>
 ## Drift Programming <br/>(漂移编程/华丽编程的甩尾效应)
 -----
-
+ThoughtWorks - Deng,Hejun
 <hr class="main-hr" />
 * Service Circles (服务环绕) {:&.moveIn}
 * Architecture Constraints (架构制约)
 * Abstract Oriented (面向抽象)
 * Drift Programming (漂移编程) 
+
 
 
 [slide data-transition="horizontal3d"]
