@@ -6,7 +6,7 @@ highlightStyle: monokai_sublime
 date: 2019年7月12日
 
 [slide data-transition="horizontal3d"]
-<img class="full-img" src="/images/car1.jpg"/>
+<img class="full-img" src="/images/car3.jpg"/>
 ## Drift Programming <br/>(漂移编程/华丽编程的甩尾效应)
 -----
 
@@ -66,7 +66,7 @@ date: 2019年7月12日
 -----
 * 环是无数服务对象(ServicePoint)的聚集的表现 {:&.moveIn}
 * 环上出现的只能是服务对象
-* 是对服务进行分级设定，是迭代构建强大系 统的良好方案
+* 是对服务进行分级设定，是迭代构建强大系统的良好方案
 
 [slide data-transition="horizontal3d"]
 -----
