@@ -6,9 +6,10 @@ highlightStyle: monokai_sublime
 date: 2015年12月20日
 
 [slide data-transition="horizontal3d"]
-## 你即将从本文了解到
+## 华丽编程之面向抽象的重要性
 -----
-<hr style="border-color:yellow"/>
+ThoughtWorks - Deng,Hejun
+<hr class="main-hr" />
 * Abstract Oriented (面向抽象) {:&.moveIn}
 * Architecture Constraints (架构制约)
 * Best Practice (最佳实践)
@@ -17,8 +18,10 @@ date: 2015年12月20日
 [slide data-transition="horizontal3d"]
 ## Abstract Oriented (面向抽象)
 -----
-<hr style="border-color:yellow"/>
-针对复合事物或逻辑进行具象升华的编程活动就是面向抽象
+<hr class="desc"/>
+<span class="desc">~ 针对复合事物或逻辑进行具象升华的编程活动就是面向抽象 ~</span>
+
+
 
 [slide data-transition="horizontal3d"]
 * 在编程范畴，尤其在企业级应用编程领域，大多编程人员一上手就已固化思维：Controller，Service，Repository,接下来是漫无止境的业务代码堆积。 {:&.bounceIn}
@@ -29,27 +32,35 @@ date: 2015年12月20日
 * 面向抽象不再是讲有一个Base Class “Shape”，下边的具象是Circle，Square..。如果没有意识到这个问题，那与“只会编写Yaml/Jenkins file”没有区别。
 
 [slide data-transition="horizontal3d"]
-* 准确来讲，抽象的本质是因为变化，同样的事物在某一时刻某一条件下会产生不一样的效应。所以在做业务决策代码编写的时候你要清楚这些业务行为所有的变化点，这就是面向抽象编程的本质。 {:&.moveIn}
-* 如果你读一些框架的源码你就会体会到，过度设计其实是不存在的，只是编写者考虑到的变化你却不屑一顾。
+* 抽象的本质是因为变化 {:&.moveIn}
+* 同样的事物在某一时刻某一条件下会产生不一样的效应。
+* 业务决策代码编写的时候你要清楚这些业务行为所有的变化点，这就是面向抽象编程的本质
+* 如果读一些框架的源码你就会体会到，过度设计其实往往不存在，只是编写者考虑到的变化你却不屑一顾
 
 [slide data-transition="horizontal3d"]
-* 不要给任何人重构你代码的机会，因为从一开始你就应该知道你要做良好的抽象。
+不要给任何人重构你代码的机会，因为从一开始你就应该知道你要做良好的抽象
+
 
 
 [slide data-transition="kontext"]
 ## Architecture Constraints (架构制约)
 -----
-<hr style="border-color:yellow"/>
-给具备一定规模的目标设计一条良好的演进路线就是架构制约
+<hr class="desc"/>
+<span class="desc">~ 给具备一定规模的目标设计一条良好的演进路线就是架构制约 ~</span>
+
+
 
 [slide data-transition="horizontal3d"]
 * 这绝对不是通常讲的软件架构范畴。一直在思考代码是怎么坏掉的。 {:&.moveIn}
-我对某些IDE工具提供所谓Refactor行为总是嗤之以鼻，他会给编程人员一种 “嗯，我已经完成了对
-这片代码的重构” 的绝对错觉，而实际上你只是抽取了一个方法或是挪了一个位置。我相信优秀的代
-码都是纯手工打造的，而不是利用IDE的把戏。
+* 我对某些IDE工具提供所谓Refactor行为总是嗤之以鼻，他会给编程人员一种 “嗯，我已经完成了对
+这片代码的重构” 的绝对错觉，而实际上你只是抽取了一个方法或是挪了一个位置
+* 我赞成工具带来的重构手法以及安全性，但不建议过度依赖以至于"丧失理智"
+* 我相信优秀的代码必须经过手工打造，而不是利用IDE的把戏。
 
 [slide data-transition="horizontal3d"]
-* "越简单的代码就越强壮"，"简单的代码就是美"？
+"越简单的代码就越强壮"，"简单的代码就是美"？
+<hr class="desc"/>
+
 
 [slide data-transition="horizontal3d"]
 * 这是我们常常听到的，某一角度讲这难道不是在变向拉低编程门槛？ {:&.moveIn}
@@ -57,14 +68,16 @@ date: 2015年12月20日
 * 麻木的相信就是迷信，最好的编程体验是隐藏复杂暴露简单。
 
 [slide data-transition="horizontal3d"]
-* 代码变坏的另外一个原因是没有 Architecture Constraints(架构制约)。
+* 代码变坏的另外一个原因是没有 Architecture Constraints(架构制约)
+
+<span class="desc">
 其实很好理解，只是很少人去思考。假设我们认为Spring Boot是我们解
 决某一问题所使用的架构，那么百分百使用这个架构的人必定受到这个架构的约束，那么不同的开发
 者都必定拥有相同的开发体验（约束），不同的开发者写出来的代码必然都能够在Spring Boot下良
 好的工作，并且能够在这个架构约束下高质量的完成需求。而现实是，传统的编程模式让开发者认为
 我只要完成了对应的“层”就可以了，而不思考我要不要实现一个业务架构制约，让以后的业务代码在
 这个约束下进化。
-
+</span>
 
 [slide data-transition="horizontal3d"]
 * 比如，我在之前有实现一个文字命令输入处理的逻辑问题，最终呈现的制约效果是这样的： {:&.moveIn}
@@ -89,8 +102,9 @@ Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
 [slide data-transition="horizontal3d"]
 ## Best Practice (最佳实践)
 -----
-<hr style="border-color:yellow"/>
-刚刚的代码部分是什么，你会怎么做？
+<hr class="desc"/>
+<span class="desc">~ 刚刚的代码部分是什么，你会怎么做？ ~</span>
+
 
 [slide data-transition="horizontal3d"]
 ## 刚刚的代码部分是什么，你会怎么做
