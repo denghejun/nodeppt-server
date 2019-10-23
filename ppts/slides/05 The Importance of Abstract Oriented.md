@@ -1,4 +1,4 @@
-title: 05 Architecture Constraints
+title: 05 05 The Importance of Abstract Oriented
 speaker: Deng,hejun
 transition: cards
 files: /css/theme.css
