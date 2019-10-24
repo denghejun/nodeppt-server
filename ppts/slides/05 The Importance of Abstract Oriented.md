@@ -83,14 +83,14 @@ ThoughtWorks - Deng,Hejun
 * 比如，我在之前有实现一个文字命令输入处理的逻辑问题，最终呈现的制约效果是这样的： {:&.moveIn}
 <pre>
 <code>
-DirectiveProxy&lt;AliasCommandDirective&gt;.Create("glob is I").Command.Execute();
+DirectiveProxy&lt;AliasCommandDirective&gt;.Create("cat is I").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("prok is V").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("pish is X").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("tegj is L").Command.Execute();
-DirectiveProxy&lt;UnitPriceCommandDirective&gt;.Create("glob glob Silver is 34 Credits").Command.Execute();
-var response = DirectiveProxy&lt;HowManyCommandDirective&gt;.Create("how many Credits is glob 
+DirectiveProxy&lt;UnitPriceCommandDirective&gt;.Create("cat cat Silver is 34 Credits").Command.Execute();
+var response = DirectiveProxy&lt;HowManyCommandDirective&gt;.Create("how many Credits is cat 
 prok Silver ?").Command.Execute();
-Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
+Assert.That(response?.ToString(), Is.EqualTo("cat prok Silver is 68 Credits"));
 </code>
 </pre>
 
@@ -117,10 +117,10 @@ Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
 ##  分离抽象
 -----
 * 面对复杂多样的数据信息时，`分类`是尝试解决复杂度、大规模的有效解决方案 {:&.bounceIn}
-    * `glob is I`: 这是一种对罗马数字进行别名约定的描述输入; {:&.bounceIn}
-    * `glob glob Silver is 34 Credits`: 这是一种对商品单价的隐式描述；
-    * `how much is pish tegj glob glob ?`:这是一种纯粹的用别名的方式询问罗马数字组合后与十进制值的转换描述；
-    * `how many Credits is glob prok Silver ?`:这是一种询问商品数量与总价的计算描述；
+    * `cat is I`: 这是一种对罗马数字进行别名约定的描述输入; {:&.bounceIn}
+    * `cat cat Silver is 34 Credits`: 这是一种对商品单价的隐式描述；
+    * `how much is cat cat ?`:这是一种纯粹的用别名的方式询问罗马数字组合后与十进制值的转换描述；
+    * `how many Credits is cat cat Silver ?`:这是一种询问商品数量与总价的计算描述；
     * `how much a could be A if foo = wow ?`:这是一种异常输入，属于程序处理范围之外的输入；
 
 [slide data-transition="horizontal3d"]
@@ -262,14 +262,14 @@ public static class DirectiveProxy&lt;TDirective&gt; where TDirective : CommandD
 -----
 <pre>
 <code >
-DirectiveProxy&lt;AliasCommandDirective&gt;.Create("glob is I").Command.Execute();
+DirectiveProxy&lt;AliasCommandDirective&gt;.Create("cat is I").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("prok is V").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("pish is X").Command.Execute();
 DirectiveProxy&lt;AliasCommandDirective&gt;.Create("tegj is L").Command.Execute();
-DirectiveProxy&lt;UnitPriceCommandDirective&gt;.Create("glob glob Silver is 34 Credits").Command.Execute();
-var response = DirectiveProxy&lt;HowManyCommandDirective&gt;.Create("how many Credits is glob prok Silver ?").Command.Execute();
+DirectiveProxy&lt;UnitPriceCommandDirective&gt;.Create("cat cat Silver is 34 Credits").Command.Execute();
+var response = DirectiveProxy&lt;HowManyCommandDirective&gt;.Create("how many Credits is cat prok Silver ?").Command.Execute();
 
-Assert.That(response?.ToString(), Is.EqualTo("glob prok Silver is 68 Credits"));
+Assert.That(response?.ToString(), Is.EqualTo("cat prok Silver is 68 Credits"));
 </code>
 </pre>
 
@@ -349,7 +349,7 @@ private static GuideResponse Solve(string content)
 ## 新Feature将不会是问题
 -----
 * 用户新增输入类型：xxx is I：意思是给罗马数字换一种别名 {:&.bounceIn}
-* 用户会输入：How many Silvers is glob glob Gold？：意思是glob glob个金子是多少银？
+* 用户会输入：How many Silvers is cat cat Gold？：意思是cat cat个金子是多少银？
 
 [slide data-transition="horizontal3d"]
 ## 引入IoC会怎样
